@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+.container{
+    padding: 0 20px 20px;
+}
+.nav-container {
+    display: block;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.navbrand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbrand a{
+    color: rgb(108, 108, 192);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 50px;
+}
+ul li a {
+    text-decoration: none;
+    color: rgb(108, 108, 192);
+    position: relative;
+}
+ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgb(108, 108, 192);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.7s;
+}
+ul li a:hover::after {
+    width: 100%;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.btn a {
+    text-decoration: none;
+    color: rgb(108, 108, 192);
+}
+.icon {
+    background-color: #eee;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.icon i {
+    color: white;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+}
+.main .text {
+    width: 30%;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.main .img {
+    width: 55%;
+}
+.main .img img {
+    width: 100%;
+    height: 95vh;
+}
+.main .text h1 {
+    color: rgb(108, 108, 192);
+    font-weight: 500;
+    font-size: 64px;
+}
+.main .text p {
+    color: rgb(108, 108, 192);
+    line-height: 1.5;
+    margin-top: 0;
+}
+.main .text .button {
+    padding-top: 20px;
+}
+.main .text .button button {
+    padding: 5px 35px;
+    border-radius: 24px;
+}
+.main .text .button button:first-child {
+    background-color: rgb(108, 108, 192);
+    color: white;
+    border: 1px solid rgb(108, 108, 192);
+}
+.main .text .button button:last-child {
+    background-color: transparent;
+    color: rgb(108, 108, 192);
+    border: 1px solid rgb(108, 108, 192);
+}
+.main .text .button button:last-child:hover {
+    background-color: rgb(108, 108, 192);
+    color: white;
+    border: 1px solid rgb(108, 108, 192);
+}
+.main .text .footer {
+    position: absolute;
+    bottom: 0;
+    color: #e0dcdc;
+}
