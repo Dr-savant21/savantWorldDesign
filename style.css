@@ -208,6 +208,11 @@ ul li a:hover::after {
         margin-left: 10px;
     }
 } 
+@media (max-width: 602px) and (min-width:470px){
+    .main .text{ 
+        padding-left: 70px;
+    }
+}
 @media (max-width: 470px){
     .main .text {
         padding-top: 0;
