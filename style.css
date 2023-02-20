@@ -225,3 +225,23 @@ ul li a:hover::after {
         margin-top: 10px;
     }
 }
+@media (max-width: 420px) {
+    .main .text {
+        padding-left: 10px;
+        width: 100%;
+    }
+    .main .img img {
+        padding-left: 50px;
+        height: auto;
+        padding-top: 40px;
+    }
+}
+@media (max-width: 380px) {
+    .main .text {
+        padding-left: 0;
+        width: 100%;
+    }
+    .main .text h1 {
+        font-size: 50px;
+    }
+}
